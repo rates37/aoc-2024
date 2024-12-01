@@ -10,10 +10,10 @@ def distance_part_1(left: List[int], right: List[int]) -> int:
     return sum(abs(l - r) for (l, r) in zip(left, right))
 
 
-def distance_part_2(left_list, right_list):
-    right_list_counter = Counter(right_list)
+def distance_part_2(left: List[int], right: List[int]):
+    rightListCounter = Counter(right)
 
-    return sum(left_number * right_list_counter[left_number] for left_number in left_list)
+    return sum(leftNum * rightListCounter[leftNum] for leftNum in left)
 
 
 def part1() -> None:
