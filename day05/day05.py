@@ -57,7 +57,7 @@ def part1() -> None:
             if not line:
                 break
             rules.append(line)
-        print(rules)
+        
         # read updates:
         updates = []
         while True:
@@ -95,7 +95,7 @@ def part2() -> None:
             if not line:
                 break
             rules.append(line)
-        print(rules)
+        
         # read updates:
         updates = []
         while True:
