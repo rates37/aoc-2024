@@ -103,7 +103,7 @@ def part2() -> None:
             for i in range(length):
                 drive[i + startIdx] = "."
                 drive[i + freeSpaceIdx] = str(id)
-            fileIDMap[id][0] = freeSpaceIdx
+            fileIDMap[id][1] = freeSpaceIdx
 
     # calculate checksum:
     total = 0
