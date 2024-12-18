@@ -50,8 +50,6 @@ def part2() -> None:
             print(f"{x},{y}")
             break
 
-    pass
-
 
 if __name__ == "__main__":
     part1()
