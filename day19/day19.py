@@ -4,17 +4,6 @@ from typing import Tuple
 
 
 @lru_cache(None)
-def count_ways(towel_patterns, design):
-    if design == "":
-        return 1
-    total_ways = 0
-    for pattern in towel_patterns:
-        if design.startswith(pattern):
-            total_ways += count_ways(towel_patterns, design[len(pattern) :])
-    return total_ways
-
-
-@lru_cache(None)
 def solve(patterns: Tuple[str], design: str) -> int:
     if design == "":
         return 1
