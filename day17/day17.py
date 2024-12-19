@@ -83,8 +83,7 @@ def search(
 
             # if a value was found, append it to possible answers
             if nextA:
-                ans.append(newA)
-                # print(oct(newA))
+                ans.append(nextA)
     if ans:
         return min(ans)
     else:
